@@ -1,0 +1,83 @@
+/* Estilo para la ventana flotante Video */
+#ventana-video {
+		position: fixed;
+		bottom: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		height: 80%;
+		background-color: #000;
+		border: 2px solid #fff;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		display: none;
+		z-index: 1000;
+}
+
+#ventana-video video {
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+}
+
+#ventana-video button {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background-color: red;
+		color: white;
+		border: none;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+}
+
+#overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+		display: none;
+		z-index: 999;
+}
+
+/* Estilo para la ventana flotante Pagina */
+#ventana-pagina {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 80%;
+		height: 80%;
+		background-color: #000;
+		border: 2px solid #ccc;
+		border-radius: 10px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+		display: none;
+		z-index: 1000;
+}
+
+#ventana-pagina iframe {
+		display: flex;
+		width: 100%;
+		height: 100%;
+		border: none;
+		border-radius: 10px 10px 0 0;
+}
+
+#ventana-pagina button {
+		position: absolute;
+		top: 5px;
+		right: 5px;
+		background-color: red;
+		color: white;
+		border: none;
+		border-radius: 50%;
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+}

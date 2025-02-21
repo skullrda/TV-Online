@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="css/inicio.css">
+	<link rel="stylesheet" href="css/player.css">
+	
+	<title>MiTV</title>
+		
+</head>
+<body>
+
+	<div class="grid-container">
+			<div class="item item1"><span class="titulo">Transmisiones en Vivo</span></div>
+			<div class="item item2">
+				<div class="fecha-container">
+					<div id="fecha"></div>
+					<div id="reloj"></div>
+				</div>
+			</div>
+	</div>
+
+	<!-- CSS Panels Container -->
+	<div class="panel-container">
+		<!-- Panel Canales Deportivos -->
+		<div class="css-panel">
+			<h3>Canales Deportivos</h3>
+			<ul id="lista-deportes" class="efecto-01">
+		</div>
+		<!-- Panel Canales Nacionales -->
+		<div class="css-panel">
+			<h3>Canales Nacionales 🇨🇱</h3>
+			<ul id="lista-tvchile" class="efecto-01">
+		</div>
+		<!-- Panel Radios Nacionales -->
+		<div class="css-panel">
+			<h3>Radios Nacionales 🇨🇱</h3>
+			<ul id="lista-radioschile" class="efecto-01">
+		</div>
+		<!-- Musica Variada -->
+		<div class="css-panel">
+			<h3>Musica Variada</h3>
+			<ul id="lista-musica" class="efecto-01">
+		</div>
+	</div>
+
+    <!-- Fondo oscuro -->
+    <div id="overlay"></div>
+		
+    <!-- Ventana flotante Video -->
+    <div id="ventana-video">
+        <button id="cerrar-video">X</button>
+        <video id="video-player" controls></video>
+    </div>
+		
+    <!-- Ventana flotante Pagina -->
+    <div id="ventana-pagina">
+        <button id="cerrar-pagina">X</button>
+        <iframe id="frame-pagina" src=""></iframe>
+    </div>		
+
+</body>
+	<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+	<script src="js/funsiones.js"></script>
+	<script src="js/player.js"></script>
+</html>
